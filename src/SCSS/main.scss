@@ -1,0 +1,16 @@
+body{
+    background-color: grey;
+    align-items: center;
+}
+header{
+    max-width: 1180px;
+    background-color: red;
+    margin: 0 auto;
+}
+details {
+    list-style: none;
+  }
+  
+  summary::marker {
+    content: none;
+  }
