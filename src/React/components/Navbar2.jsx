@@ -1,4 +1,3 @@
-import logo from '../../../public/logo.svg';
 import chevronLeft from '../../../public/chevron-left.svg';
 import chevronDown from '../../../public/chevron-down.svg';
 import { useState } from 'react';
@@ -13,10 +12,7 @@ function Navbar2() {
   const chevronIcon3 = details3Expanded ? chevronLeft : chevronDown;
 
   return (
-    <div className="navbar2">
-      <section className="navbar2__logo">
-        <img className='logo' src={logo} alt="logo" />
-      </section>
+
       <section className="navbar2__summary">
 
         <details onToggle={() => setDetails1Expanded(!details1Expanded)} open={details1Expanded} key="details1">
@@ -69,7 +65,6 @@ function Navbar2() {
         <a href="#">News</a>
         <a href="#">Events</a>
       </section>
-    </div>
   );
 }
 

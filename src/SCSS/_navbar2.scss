@@ -1,23 +1,28 @@
-body{
-    header{
-        .header{
-            .navbar2{
+body {
+    header {
+        display: flex;
+        flex-direction: row;
+  
+      .header-open {
+        .navbar2 {
+            height: 100%;
+            width: 90%;
+            &__summary{
+                display: flex;
+                flex-direction: column;
                 width: 100%;
-                border-bottom: 1px rgb(255, 255, 255,0.3) solid;
-                &__logo{
-                    width: 30%;
-                    height: 20%;
-                    display: flex;
-                    align-items: center;
-                    .logo{
-                        margin:15% 0 0 10%;
-                        width: 5.5rem;
-                    } 
-                }
-                &__summary{
-                    display: none;
-                }
+                padding-left: 40%;
+                height: 25%;
+                justify-content: center;
+                left: 0;
+                right: 0;
+                margin: auto;
+                font-size: 1.2rem;
+            }
+            summary{
+                margin-top: 10%;
             }
         }
     }
+}
 }

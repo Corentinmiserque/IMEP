@@ -1,4 +1,4 @@
-
+import Hamburger from "./Hamburger"
 function Navbar() {
 
   return (
@@ -6,8 +6,8 @@ function Navbar() {
         <div className="navbar">
           <section className='navbar__section navbar__left'>
             <a className='navbar__link' href="#">Rent a room</a>
-            <a className='navbar__link' href="#">brochure</a>
-            <a className='navbar__link'  href="#">media catalogue</a>
+            <a className='navbar__link' href="#">Brochure</a>
+            <a className='navbar__link'  href="#">Media catalogue</a>
           </section>
           <section className='navbar__section navbar__right'>
             <a className='navbar__link'  href="#">Intranet</a>

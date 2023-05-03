@@ -5,6 +5,7 @@
 @import "./navbar";
 @import "./navbar2";
 @import "./herosection";
+@import "./logo";
 
 *{
   margin: 0;
@@ -18,7 +19,14 @@
 body {
   font-family: 'Avik', sans-serif;
   width: 100dvw;
-  height: 100dvh;
+  height: 200dvh;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.GT-Super{
+  font-family: 'GT-Super', serif;
+  font-style: italic;
 }
 
 
@@ -27,7 +35,6 @@ body {
 details {
   list-style: none;
 }
-
 summary::marker {
   content: none;
 }

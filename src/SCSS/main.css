@@ -10,37 +10,44 @@
   font-family: "helvetica Neue";
   src: url("../assets/fonts/helvetica Neue.otf") format("opentype");
 }
-body {
-  display: flex;
-  justify-content: center;
-  width: 100dvw;
-  height: 100dvh;
-  color: aliceblue;
-}
 body header {
   width: 100%;
-  height: 200%;
+  height: 100%;
+  max-width: 1150px;
   background-color: aqua;
   margin: 0 auto;
   background: linear-gradient(180deg, rgba(23, 27, 55, 0.8) 26.56%, rgba(10, 15, 57, 0) 100%), url(../../public/herosection.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 body header .header {
   width: 100%;
   position: fixed;
 }
+body header .header-open {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(23, 27, 55, 0.95);
+  z-index: 2;
+  overflow: hidden;
+}
+body header .header-open a {
+  color: white;
+}
 
-body header .header .hamburger {
+body header .hamburger {
   position: absolute;
-  top: 20%;
+  top: 2%;
   right: 5%;
   width: 10%;
   height: 5%;
   z-index: 10000;
 }
-body header .header .hamburger span {
+body header .hamburger span {
   width: 100%;
   display: block;
   height: 2px;
@@ -49,44 +56,81 @@ body header .header .hamburger span {
   align-items: center;
   margin-top: 33%;
 }
-body header .header .hamburger.show-hamburger :nth-child(1) {
+body header .hamburger.show-hamburger :nth-child(1) {
   position: absolute;
   transform: translateY(5.5vw) rotate(135deg);
 }
-body header .header .hamburger.show-hamburger :nth-child(2) {
+body header .hamburger.show-hamburger :nth-child(2) {
   background-color: transparent;
 }
-body header .header .hamburger.show-hamburger :nth-child(3) {
+body header .hamburger.show-hamburger :nth-child(3) {
   transform: translateY(1.1vw) rotate(-135deg);
 }
-body header .header .hamburger:hover {
+body header .hamburger:hover {
   cursor: pointer;
 }
-body header .header .hamburger span {
+body header .hamburger span {
   transition: all 0.3s ease-in-out;
 }
 
-body header .header .navbar {
+body header .header-open .navbar {
+  height: 100%;
+  width: 90%;
+  padding-top: 20%;
+}
+body header .header-open .navbar__section {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  display: none;
+  padding-left: 40%;
+  height: 25%;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 1.2rem;
+}
+body header .header-open .navbar__section a {
+  margin-top: 10%;
+  position: relative;
+}
+body header .header-open .navbar__section a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -2px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+body header .header-open .navbar__section a:hover::before {
+  width: 13ch;
+  height: 0.5px;
+  border-radius: 0;
 }
 
-body header .header .navbar2 {
-  width: 100%;
-  border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
-}
-body header .header .navbar2__logo {
-  width: 30%;
-  height: 20%;
+body header {
   display: flex;
-  align-items: center;
+  flex-direction: row;
 }
-body header .header .navbar2__logo .logo {
-  margin: 15% 0 0 10%;
-  width: 5.5rem;
+body header .header-open .navbar2 {
+  height: 100%;
+  width: 90%;
 }
-body header .header .navbar2__summary {
-  display: none;
+body header .header-open .navbar2__summary {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 40%;
+  height: 25%;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 1.2rem;
+}
+body header .header-open .navbar2 summary {
+  margin-top: 10%;
 }
 
 body header {
@@ -96,12 +140,86 @@ body header {
 }
 body header .herosection {
   width: 90%;
-  padding-top: 75%;
+  height: 30%;
+  padding-top: 50%;
   justify-content: center;
 }
-body header .herosection span {
-  font-family: "GT-Super", serif;
-  font-style: italic;
+body header .herosection__title {
+  font-weight: 400;
+  font-size: 2rem;
+}
+body header .herosection__summary {
+  width: 55%;
+  margin-top: 10%;
+  padding: 4%;
+  border-radius: 30px;
+  border: 0.5px rgb(255, 255, 255) solid;
+}
+body header .herosection__summary-title {
+  font-size: 1rem;
+  margin-left: 5%;
+  font-weight: 500;
+}
+body header .herosection__summary-chevron {
+  margin-left: 40%;
+}
+body header .herosection__summary-content {
+  display: flex;
+  flex-direction: column;
+}
+body header .herosection__summary-link {
+  width: 15%;
+  font-size: 1rem;
+  color: white;
+  margin-left: 6%;
+  margin-top: 3%;
+  position: relative;
+}
+body header .herosection__summary-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -2px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+body header .herosection__summary-link:hover::before {
+  width: 5ch;
+  height: 0.5px;
+  border-radius: 0;
+}
+body header .herosection img.circle {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+}
+
+body header .header {
+  width: 100%;
+  height: 100%;
+}
+body header .header .navbar2 {
+  width: 100%;
+  height: 10%;
+  border-bottom: 0.5px solid white;
+}
+body header .header .navbar2__logo .logo {
+  width: 25%;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+body header .header-open .navbar2 {
+  width: 100%;
+  height: 10%;
+  border-bottom: 0.5px solid white;
+}
+body header .header-open .navbar2__logo .logo {
+  width: 25%;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
 }
 
 * {
@@ -115,7 +233,15 @@ body header .herosection span {
 body {
   font-family: "Avik", sans-serif;
   width: 100dvw;
-  height: 100dvh;
+  height: 200dvh;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.GT-Super {
+  font-family: "GT-Super", serif;
+  font-style: italic;
 }
 
 details {
