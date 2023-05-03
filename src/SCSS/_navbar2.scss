@@ -1,0 +1,23 @@
+body{
+    header{
+        .header{
+            .navbar2{
+                width: 100%;
+                border-bottom: 1px rgb(255, 255, 255,0.3) solid;
+                &__logo{
+                    width: 30%;
+                    height: 20%;
+                    display: flex;
+                    align-items: center;
+                    .logo{
+                        margin:15% 0 0 10%;
+                        width: 5.5rem;
+                    } 
+                }
+                &__summary{
+                    display: none;
+                }
+            }
+        }
+    }
+}

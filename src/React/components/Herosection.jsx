@@ -7,25 +7,27 @@ function Herosection() {
     const chevronIcon = detailsExpanded ? chevronLeft : chevronDown;
 
     return (
-        <>
-<h1>Unlock your musical potential at our renowned Royal Music Academy</h1>
+    <>
+        <div className='herosection'>
+            <h1>Unlock your <br />
+                musical potential at <br />
+                our renowned <span className='GT-Super'>Royal <br />
+                Music Academy</span>
+            </h1>
 
- <details onToggle={() => setDetailsExpanded(!detailsExpanded)} open={detailsExpanded} key="details2">
-          <summary>
-            <span className="summary-title">you are</span>
-            <img className="summary-chevron-down" src={chevronIcon} alt="chevron" />
-          </summary>
-
-
-          <div className="summary-content">
-           <a href="#">lorem</a>
-           <a href="#">lorem</a>
-           <a href="#">lorem</a>
-
-          </div>
-        </details>
-
-        </>
+            <details onToggle={() => setDetailsExpanded(!detailsExpanded)} open={detailsExpanded} key="details2">
+                <summary>
+                    <span className="summary-title">you are</span>
+                    <img className="summary-chevron-down" src={chevronIcon} alt="chevron" />
+                </summary>
+                <div className="summary-content">
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                    <a href="#">lorem</a>
+                </div>
+            </details>
+        </div>
+    </>
     )
   }
   

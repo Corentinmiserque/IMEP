@@ -15,7 +15,7 @@ function Navbar2() {
   return (
     <div className="navbar2">
       <section className="navbar2__logo">
-        <img src={logo} alt="logo" />
+        <img className='logo' src={logo} alt="logo" />
       </section>
       <section className="navbar2__summary">
 

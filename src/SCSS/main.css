@@ -1,12 +1,121 @@
+@font-face {
+  font-family: "Avik";
+  src: url("../assets/fonts/Aktiv-Grotesk.otf") format("opentype");
+}
+@font-face {
+  font-family: "GT-Super";
+  src: url("../assets/fonts/GT-Super.otf") format("opentype");
+}
+@font-face {
+  font-family: "helvetica Neue";
+  src: url("../assets/fonts/helvetica Neue.otf") format("opentype");
+}
 body {
-  background-color: grey;
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100dvw;
+  height: 100dvh;
+  color: aliceblue;
+}
+body header {
+  width: 100%;
+  height: 200%;
+  background-color: aqua;
+  margin: 0 auto;
+  background: linear-gradient(180deg, rgba(23, 27, 55, 0.8) 26.56%, rgba(10, 15, 57, 0) 100%), url(../../public/herosection.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body header .header {
+  width: 100%;
+  position: fixed;
 }
 
-header {
-  max-width: 1180px;
-  background-color: red;
-  margin: 0 auto;
+body header .header .hamburger {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 10%;
+  height: 5%;
+  z-index: 10000;
+}
+body header .header .hamburger span {
+  width: 100%;
+  display: block;
+  height: 2px;
+  border-radius: 20px;
+  background-color: white;
+  align-items: center;
+  margin-top: 33%;
+}
+body header .header .hamburger.show-hamburger :nth-child(1) {
+  position: absolute;
+  transform: translateY(5.5vw) rotate(135deg);
+}
+body header .header .hamburger.show-hamburger :nth-child(2) {
+  background-color: transparent;
+}
+body header .header .hamburger.show-hamburger :nth-child(3) {
+  transform: translateY(1.1vw) rotate(-135deg);
+}
+body header .header .hamburger:hover {
+  cursor: pointer;
+}
+body header .header .hamburger span {
+  transition: all 0.3s ease-in-out;
+}
+
+body header .header .navbar {
+  width: 100%;
+  display: none;
+}
+
+body header .header .navbar2 {
+  width: 100%;
+  border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+}
+body header .header .navbar2__logo {
+  width: 30%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+body header .header .navbar2__logo .logo {
+  margin: 15% 0 0 10%;
+  width: 5.5rem;
+}
+body header .header .navbar2__summary {
+  display: none;
+}
+
+body header {
+  display: flex;
+  justify-content: center;
+  width: 100dvw;
+}
+body header .herosection {
+  width: 90%;
+  padding-top: 75%;
+  justify-content: center;
+}
+body header .herosection span {
+  font-family: "GT-Super", serif;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Avik", sans-serif;
+  width: 100dvw;
+  height: 100dvh;
 }
 
 details {

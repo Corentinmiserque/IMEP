@@ -1,16 +1,33 @@
-body{
-    background-color: grey;
-    align-items: center;
-}
-header{
-    max-width: 1180px;
-    background-color: red;
-    margin: 0 auto;
-}
-details {
-    list-style: none;
-  }
+
+@import "./variables";
+@import "./header";
+@import "./hamburger";
+@import "./navbar";
+@import "./navbar2";
+@import "./herosection";
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
   
-  summary::marker {
-    content: none;
-  }
+}
+
+body {
+  font-family: 'Avik', sans-serif;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+
+
+
+details {
+  list-style: none;
+}
+
+summary::marker {
+  content: none;
+}

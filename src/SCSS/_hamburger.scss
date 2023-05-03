@@ -1,0 +1,42 @@
+body{
+    header{
+        .header{
+            .hamburger {
+                position: absolute;
+                top: 20%;
+                right: 5%;
+                width: 10%;
+                height: 5%;
+                z-index: 10000;
+                span {
+                    width: 100%;
+                    display: block;
+                    height: 2px;
+                    border-radius: 20px;
+                    background-color: white;
+                    align-items: center;
+                    margin-top: 33%;
+                }
+                &.show-hamburger{
+                    :nth-child(1) {
+                        position: absolute;
+                        transform: translateY(5.5vw) rotate(135deg);
+                        
+                    }
+                    :nth-child(2) {
+                        background-color: transparent;
+                    }
+                    :nth-child(3) {
+                        transform: translateY(1.1vw) rotate(-135deg);
+                    }
+                }
+              }
+              .hamburger:hover {
+                cursor: pointer;
+              }
+              .hamburger span {
+                transition: all 0.3s ease-in-out;
+              }  
+        }
+    }
+}
