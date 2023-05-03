@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Navbar2 from './Navbar2';
 import Herosection from './Herosection';
 import Hamburger from './Hamburger';
-import Logo from './logo';
+import Logo from './Logo';
 
 function Header() {
   const [showNavbar, setShowNavbar] = useState(false);

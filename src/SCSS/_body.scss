@@ -1,0 +1,24 @@
+body{
+    main{
+        color: $dark-blue;
+        width: 100%;
+        height: auto;
+        z-index: 100000;
+        .intro{
+            width: 90%;
+            margin: 0 auto;
+&__right{
+    &__text{
+        &__big{
+            font-size: 1.2rem;
+        }
+        &__small{
+            margin-top: 10%;
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+    }
+}
+}
+        }
+    }

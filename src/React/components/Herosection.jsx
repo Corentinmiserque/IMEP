@@ -5,9 +5,9 @@ import circleDown from '../../../public/circle-down.svg';
 
 function Herosection() {
 
-  const [detailsExpanded, setDetailsExpanded] = useState(false);
-  const chevronIcon = detailsExpanded ? chevronLeft : chevronDown;
-
+  const [details1Expanded, setDetails1Expanded] = useState(false);
+  const chevronIcon = details1Expanded ? chevronLeft : chevronDown;
+  
   const scrollToBottom = () => {
     window.scrollTo({
       top: document.documentElement.scrollHeight,
@@ -24,7 +24,7 @@ function Herosection() {
         Music Academy</span>
       </h1>
 
-      <details onToggle={() => setDetailsExpanded(!detailsExpanded)} open={detailsExpanded} key="details" className='herosection__details'>
+      <details onToggle={() => setDetails1Expanded(!details1Expanded)} open={details1Expanded} key="details1">
         <summary className='herosection__summary'>
           <span className="herosection__summary-title">you are</span>
           <img className="herosection__summary-chevron" src={chevronIcon} alt="chevron" />
@@ -35,12 +35,14 @@ function Herosection() {
           <a className="herosection__summary-link" href="#">lorem</a>
         </div>
       </details>
+
       <img className='circle' src={circleDown} alt="CircleDown" onClick={scrollToBottom} />
     </div>
   );
 }
 
 export default Herosection;
+
 
 
 

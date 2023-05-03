@@ -6,6 +6,8 @@
 @import "./navbar2";
 @import "./herosection";
 @import "./logo";
+@import "./body";
+@import "./study-category";
 
 *{
   margin: 0;
@@ -13,25 +15,61 @@
   text-decoration: none;
   box-sizing: border-box;
   list-style: none;
+  border: none;
   
 }
 
 body {
   font-family: 'Avik', sans-serif;
   width: 100dvw;
-  height: 200dvh;
+  height: 100dvh;
   color: white;
   display: flex;
   justify-content: center;
 }
+
+//span 
 .GT-Super{
   font-family: 'GT-Super', serif;
   font-style: italic;
+  font-weight: 400;
 }
 
+//sub title
+.sub-title{
+  padding: 10% 0;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  img{
+      width: 0.3rem;
+  }
+  h2{
+    font-size: 0.9rem;
+    margin-top: 10%;
+    font-weight: 400;
+  }
+}
+ //button
+
+ .all-button{
+    border: solid 1px $dark-blue;
+    border-radius: 20px;
+    background-color: transparent;
+    margin: 10% 0;
+    padding:  0.5ch 2ch;
+    :hover{
+      opacity: 0.9;
+    }
+    a{
+      color: $dark-blue;
+      font-size: 0.7rem;
+      
+    }
+ }
 
 
-
+//details
 details {
   list-style: none;
 }
