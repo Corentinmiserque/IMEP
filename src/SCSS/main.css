@@ -510,7 +510,7 @@ body main .heroarea3 form input::placeholder {
 }
 .carousel__content img {
   width: 5rem;
-  height: 10rem;
+  height: 5rem;
   margin-top: 20%;
 }
 .carousel__content h2 {
@@ -573,6 +573,101 @@ body main .heroarea3 form input::placeholder {
 }
 .numbers__number__3, .numbers__number__1 {
   transform: translateY(1rem);
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+.social .social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.social .social-media .facebook img,
+.social .social-media .twitter img,
+.social .social-media .insta img,
+.social .social-media .linkedin img {
+  width: 4rem;
+  margin-bottom: 25%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #171B37;
+  color: #ffffff;
+  font-weight: 200;
+}
+.footer .footer1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer .footer1 .link {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer1 .link p {
+  font-weight: 600;
+  margin-bottom: 10%;
+  font-size: 0.75rem;
+}
+.footer .footer1 .link a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  font-weight: 200;
+  font-size: 0.6rem;
+}
+.footer .footer1 .link img {
+  width: 3rem;
+}
+.footer .footer1 .follow {
+  flex-basis: 1rem;
+}
+.footer .footer1 .follow .social-media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.footer .footer1 .follow .social-media img {
+  width: 0.85rem;
+  margin: 0 5%;
+}
+.footer .footer1 .follow .social-media .facebook {
+  width: 0.35rem;
+}
+.footer .footer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 0.4rem;
+  padding: 5% 0 0;
+}
+.footer .footer2 .droit a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+.footer .footer2 .politiques {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer2 .politiques a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin-right: 10px;
 }
 
 * {

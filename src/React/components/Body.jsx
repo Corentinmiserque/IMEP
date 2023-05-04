@@ -9,6 +9,10 @@ import News from './New';
 import HeroArea3 from './HeroArea3';
 import AlumniCarousel from './Alumni';
 import Number from './Number';
+import Social from './Social';
+import Footer from './footer';
+
+
 function Body() {
 
 
@@ -16,6 +20,7 @@ function Body() {
   return (
     <>
       <main>
+
         <Intro/>
         <StudyCategory/>
         <HeroArea1/>
@@ -26,7 +31,12 @@ function Body() {
         <Event/>
         <News/>
         <HeroArea3/>
+        <Social/>
+        <Footer/>
       </main>
+     
+   
+      
       
     </>
   );
