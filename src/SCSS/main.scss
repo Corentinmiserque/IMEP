@@ -8,6 +8,7 @@
 @import "./logo";
 @import "./body";
 @import "./study-category";
+@import "./heroarea";
 
 *{
   margin: 0;
@@ -38,7 +39,7 @@ body {
 //sub title
 .sub-title{
   padding: 10% 0;
-  width: 15%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   img{
@@ -47,26 +48,48 @@ body {
   h2{
     font-size: 0.9rem;
     margin-top: 10%;
-    font-weight: 400;
+    font-weight: 200;
   }
 }
- //button
 
- .all-button{
-    border: solid 1px $dark-blue;
-    border-radius: 20px;
-    background-color: transparent;
-    margin: 10% 0;
-    padding:  0.5ch 2ch;
-    :hover{
-      opacity: 0.9;
-    }
-    a{
-      color: $dark-blue;
-      font-size: 0.7rem;
-      
-    }
- }
+ //button
+ .all-button {
+  position: relative;
+  border: solid 1px $dark-blue;
+  border-radius: 20px;
+  background-color: transparent;
+  margin: 10% 0;
+  padding:  0.5ch 2ch;
+  font-size: 0.7rem;
+  z-index: 1;
+  
+  a {
+    color: $dark-blue;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: $dark-blue;
+    transition: all 0.5s ease;
+    z-index: -1;
+    pointer-events: none; /* ajout de cette ligne */
+  }
+  
+  &:hover::before {
+    left: 0;
+  }
+  
+  overflow: hidden;
+  
+  &:hover a {
+    color: $white;
+  }
+}
 
 
 //details
@@ -76,3 +99,53 @@ details {
 summary::marker {
   content: none;
 }
+.title{
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+//P
+.small{
+  margin-top: 10%;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+//heroarea
+body {
+  main {
+    .heroarea {
+      width: 100%;
+      height: 35%;
+      max-width: 1150px;
+      margin: 10% auto;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      &__title {
+        color: white;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        font-weight: 400;
+        font-size: 2.2rem;
+      }
+
+      &__ellipse {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+      }
+    }
+  }
+}
+

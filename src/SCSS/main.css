@@ -14,7 +14,6 @@ body header {
   width: 100%;
   height: 100%;
   max-width: 1150px;
-  background-color: aqua;
   margin: 0 auto;
   background: linear-gradient(180deg, rgba(23, 27, 55, 0.8) 26.56%, rgba(10, 15, 57, 0) 100%), url(../../public/herosection.svg);
   background-repeat: no-repeat;
@@ -26,7 +25,7 @@ body header {
 }
 body header .header {
   width: 100%;
-  height: 100%;
+  height: 9%;
   position: fixed;
 }
 body header .header-open {
@@ -179,20 +178,6 @@ body header .herosection__summary-link {
   margin-top: 3%;
   position: relative;
 }
-body header .herosection__summary-link::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  bottom: -2px;
-  background-color: white;
-  transition: all 0.3s ease-in-out;
-}
-body header .herosection__summary-link:hover::before {
-  width: 5ch;
-  height: 0.5px;
-  border-radius: 0;
-}
 body header .herosection img.circle {
   position: fixed;
   right: 5%;
@@ -200,13 +185,11 @@ body header .herosection img.circle {
 }
 
 body header .header {
-  width: 100%;
-  height: 100%;
   z-index: 0;
 }
 body header .header .navbar2 {
   width: 100%;
-  height: 10%;
+  height: 100%;
   border-bottom: 0.5px solid white;
   z-index: 1;
 }
@@ -218,7 +201,7 @@ body header .header .navbar2__logo .logo {
 }
 body header .header-open .navbar2 {
   width: 100%;
-  height: 10%;
+  height: 100%;
   border-bottom: 0.5px solid white;
 }
 body header .header-open .navbar2__logo .logo {
@@ -230,25 +213,149 @@ body header .header-open .navbar2__logo .logo {
 
 body main {
   color: #171B37;
-  width: 100%;
-  height: auto;
-  z-index: 100000;
+  height: 100dvh;
+  width: 100dvw;
+  z-index: 10;
+  margin: 0 auto;
 }
 body main .intro {
+  z-index: 10;
   width: 90%;
   margin: 0 auto;
 }
 body main .intro__right__text__big {
   font-size: 1.2rem;
 }
-body main .intro__right__text__small {
-  margin-top: 10%;
-  font-size: 0.8rem;
-  font-weight: 300;
+
+.study-category {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+.study-category .study-category__main {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+.study-category .study-category__main .title {
+  margin-bottom: 10%;
+}
+.study-category .study-category__main .horizontal-scroll {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  height: auto;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  overflow-y: hidden;
+}
+.study-category .study-category__main .horizontal-scroll::-webkit-scrollbar {
+  height: 2px;
+}
+.study-category .study-category__main .horizontal-scroll::-webkit-scrollbar-track {
+  background-color: rgb(233, 233, 233);
+}
+.study-category .study-category__main .horizontal-scroll::-webkit-scrollbar-thumb {
+  background-color: #171B37;
+  border-radius: 5px;
+}
+.study-category .study-category__main .horizontal-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #a38275;
+}
+.study-category .study-category__main .horizontal-scroll__item {
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 0 0 200px;
+  align-items: center;
+  border: 1px solid #e8e8e8;
+}
+.study-category .study-category__main .horizontal-scroll__item .container-text {
+  flex: 1;
+  margin: 0 5%;
+}
+.study-category .study-category__main .horizontal-scroll__item .container-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.study-category .study-category__main .horizontal-scroll__item .container-img {
+  height: 60%;
+  width: 100%;
+  margin-bottom: 10%;
+}
+.study-category .study-category__main .horizontal-scroll__item .container-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-body main .study-category img {
-  width: 10%;
+body main .heroarea1 {
+  background: linear-gradient(180deg, rgba(23, 27, 55, 0.8) 26.56%, rgba(10, 15, 57, 0) 100%), url(../../public/container4.svg);
+}
+body main .heroarea2 {
+  background: linear-gradient(180deg, rgba(23, 27, 55, 0.8) 26.56%, rgba(10, 15, 57, 0) 100%), url(../../public/heroarea2.svg);
+}
+body main .heroarea3 {
+  background: linear-gradient(180deg, rgba(23, 27, 55, 0.8) 26.56%, rgba(10, 15, 57, 0) 100%), url(../../public/heroarea3.svg);
+}
+body main .heroarea3 .sub-title {
+  transform: translateX(40%) translateY(0%);
+}
+body main .heroarea3 .sub-title h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  margin-top: 2.5%;
+}
+body main .heroarea3 .sub-title img {
+  width: 0.2rem;
+}
+body main .heroarea3__title {
+  color: #ffffff;
+  font-size: 1.4rem;
+  transform: translateX(0%) translateY(-60%);
+  font-weight: 400;
+}
+body main .heroarea3 p {
+  color: #ffffff;
+  font-size: 0.49rem;
+  transform: translateX(0%) translateY(-350%);
+  font-weight: 200;
+}
+body main .heroarea3 form {
+  color: #ffffff;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-20%) translateY(-80%);
+}
+body main .heroarea3 form .all-button {
+  color: #ffffff;
+  font-size: 0.6rem;
+  padding: 0.5ch 0.5ch;
+  width: 60%;
+  padding: 0.75ch 0;
+  border: 0.5px solid #ffffff;
+  transform: translateX(70%) translateY(0%);
+}
+body main .heroarea3 form input {
+  width: 120%;
+  background-color: transparent;
+  color: #ffffff;
+  border-bottom: 0.5px #ffffff solid;
+  font-size: 0.6rem;
+  padding-bottom: 5%;
+  opacity: 0.5;
+}
+body main .heroarea3 form input::-moz-placeholder {
+  font-weight: 100;
+  color: #ffffff;
+}
+body main .heroarea3 form input::placeholder {
+  font-weight: 100;
+  color: #ffffff;
 }
 
 * {
@@ -277,7 +384,7 @@ body {
 
 .sub-title {
   padding: 10% 0;
-  width: 15%;
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -287,22 +394,40 @@ body {
 .sub-title h2 {
   font-size: 0.9rem;
   margin-top: 10%;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .all-button {
+  position: relative;
   border: solid 1px #171B37;
   border-radius: 20px;
   background-color: transparent;
   margin: 10% 0;
   padding: 0.5ch 2ch;
-}
-.all-button :hover {
-  opacity: 0.9;
+  font-size: 0.7rem;
+  z-index: 1;
+  overflow: hidden;
 }
 .all-button a {
   color: #171B37;
-  font-size: 0.7rem;
+}
+.all-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #171B37;
+  transition: all 0.5s ease;
+  z-index: -1;
+  pointer-events: none; /* ajout de cette ligne */
+}
+.all-button:hover::before {
+  left: 0;
+}
+.all-button:hover a {
+  color: #ffffff;
 }
 
 details {
@@ -311,4 +436,46 @@ details {
 
 summary::marker {
   content: none;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.small {
+  margin-top: 10%;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+body main .heroarea {
+  width: 100%;
+  height: 35%;
+  max-width: 1150px;
+  margin: 10% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+body main .heroarea__title {
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+body main .heroarea__ellipse {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }/*# sourceMappingURL=main.css.map */

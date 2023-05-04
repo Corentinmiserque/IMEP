@@ -1,0 +1,74 @@
+body {
+    main {
+
+      .heroarea1 {
+        background: linear-gradient(180deg, rgba(23, 27, 55, 0.8) 26.56%, rgba(10, 15, 57, 0) 100%),
+          url(../../public/container4.svg);
+      }
+      .heroarea2 {
+        background: linear-gradient(180deg, rgba(23, 27, 55, 0.8) 26.56%, rgba(10, 15, 57, 0) 100%),
+          url(../../public/heroarea2.svg);
+      }
+      .heroarea3 {
+        background: linear-gradient(180deg, rgba(23, 27, 55, 0.8) 26.56%, rgba(10, 15, 57, 0) 100%),
+          url(../../public/heroarea3.svg);
+          .sub-title{
+            h2{
+              color: $white;
+              text-transform: uppercase;
+              font-size: 0.5rem;
+              margin-top: 2.5%;
+            }
+            img{
+              width: 0.2rem
+            }
+           transform: translateX(40%) translateY(0%);
+      }
+      &__title{
+        color: $white;
+        font-size: 1.4rem;
+        transform: translateX(0%) translateY(-60%);
+        font-weight: 400;
+      }
+      p{
+        color: $white;
+        font-size: 0.49rem;
+        transform: translateX(0%) translateY(-350%);
+        font-weight: 200;
+      }
+      form{
+        color: $white;
+        font-size: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(-20%) translateY(-80%);
+
+.all-button{
+  color: $white;
+  font-size: 0.6rem;
+  padding: 0.5ch 0.5ch;
+  width: 60%;
+  padding: 0.75ch 0;
+  border: 0.5px solid $white;
+  transform: translateX(70%) translateY(-0%);
+  
+}
+        input{
+          width: 120%;
+          background-color: transparent;
+          color: $white;
+          border-bottom: 0.5px $white solid;
+          font-size: 0.6rem;
+          padding-bottom: 5%;
+          opacity: 0.5;
+          &::placeholder {
+            font-weight: 100;
+            color: $white;
+
+          }
+          
+        }
+      }
+    }
+  }
+} 

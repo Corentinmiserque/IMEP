@@ -1,0 +1,22 @@
+{
+    "teachers": [
+      {
+        "name": "Ning SHI",
+        "instrument": "Alto",
+        "photo": "Ning",
+        "link": "#"
+      },
+      {
+        "name": "Denis-Pierre GUSTIN",
+        "instrument": "Flûte traversière",
+        "photo": "Gustin",
+        "link": "#"
+      },
+      {
+        "name": "Denis-Pierre GUSTIN",
+        "instrument": "Gustin2",
+        "photo": "Gustin2",
+        "link": "#"
+      }
+    ]
+  }

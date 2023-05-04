@@ -1,9 +1,72 @@
-body{
-    main{
-        .study-category{
-            img{
-                width: 10%;
-            }
+.study-category {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+
+  .study-category__main {
+    display: flex;
+  
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  .title{
+  margin-bottom: 10%;
+  }
+
+  
+
+ 
+  
+    .horizontal-scroll {
+      width: 100%;
+      display: flex;
+      gap: 30px;
+      height: auto;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      overflow-y: hidden;
+      
+      &::-webkit-scrollbar {
+        height:2px;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: rgb(233, 233, 233);
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $dark-blue;
+        border-radius: 5px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #a38275;
+      }
+      &__item {
+        display: flex;
+        flex-direction: column-reverse;
+        flex: 0 0 200px;
+        align-items: center;
+        border: 1px solid #e8e8e8;
+        .container-text {
+          flex: 1;
+          margin: 0 5%;
+          
         }
+        .container-title{
+          font-size: 1.25rem;
+          font-weight: 400;
+        }
+        .container-img {
+          height: 60%;
+          width: 100%;
+          margin-bottom: 10%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }          
+        }
+      }
     }
+  }
 }
+

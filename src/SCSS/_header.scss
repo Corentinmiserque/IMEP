@@ -3,7 +3,6 @@ body{
         width: 100%;
         height: 100%;
         max-width: 1150px;
-        background-color: aqua;
         margin: 0 auto;
         background: linear-gradient(180deg, rgba(23, 27, 55, 0.8) 26.56%, rgba(10, 15, 57, 0) 100%), url(../../public/herosection.svg);
         background-repeat: no-repeat;
@@ -15,7 +14,7 @@ body{
 
         .header{
             width: 100%;
-            height: 100%;
+            height: 9%;
            position: fixed;
         }   
         .header-open{

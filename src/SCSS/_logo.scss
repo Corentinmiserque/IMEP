@@ -1,12 +1,10 @@
 body{
     header{
        .header{
-        width: 100%;
-        height: 100%;
         z-index: 0;
             .navbar2{
                 width: 100%;
-                height: 10%;
+                height: 100%;
                 border-bottom: 0.5px solid white;
                 z-index: 1;
                 &__logo{
@@ -22,7 +20,7 @@ body{
         .header-open{
             .navbar2{
                 width: 100%;
-                height: 10%;
+                height: 100%;
                 border-bottom: 0.5px solid white;
                 &__logo{
                     .logo{

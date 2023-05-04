@@ -17,7 +17,7 @@ function Herosection() {
 
   return (
     <div className='herosection'>
-      <h1 className='herosection__title'>
+      <h1 className='herosection__title title'>
         Unlock your <br />
         musical potential at <br />
         our renowned <span className='GT-Super'>Royal <br />
