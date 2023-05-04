@@ -1,0 +1,23 @@
+{
+    "alumni": [
+      {
+        "background": "alumni-background.svg",
+        "image": "alumni-image",
+        "name": "Samuel Leclaire",
+        "description": "“Attending the Royal Music Academy was one of the best decisions I've ever made”"
+      },
+      {
+        "background": "heroarea2.svg",
+        "image": "alumni-image",
+        "name": "Sophie Dupont",
+        "description": "“I received world-class training at the Royal Music Academy, and it has taken me places I never thought possible.”"
+      },
+      {
+        "background": "heroarea3.svg",
+        "image": "alumni-image",
+        "name": "Julien Martin",
+        "description": "“The faculty at the Royal Music Academy is incredibly supportive and inspiring. They helped me find my own voice as a musician.”"
+      }
+    ]
+  }
+  

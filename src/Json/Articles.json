@@ -1,17 +1,24 @@
 {
     "news": [
       {
-        "photo": "https://example.com/news1.jpg",
-        "description": "This is the first news article.",
+        "photo": "new1",
+        "description": "Unleashing Creativity: The Royal Music Academy's Approach to Music Education1",
         "link": "#",
-        "tags": ["tag1", "tag2"]
+        "tags": ["tag1",".", "tag2"]
       },
       {
-        "photo": "https://example.com/news2.jpg",
-        "description": "This is the second news article.",
+        "photo": "new2",
+        "description": "Unleashing Creativity: The Royal Music Academy's Approach to Music Education2",
         "link": "#",
-        "tags": ["tag3", "tag4"]
+        "tags": ["tag1",".", "tag2"]
+      },
+      {
+        "photo": "new3",
+        "description": "Unleashing Creativity: The Royal Music Academy's Approach to Music Education3",
+        "link": "#",
+        "tags": ["tag1",".", "tag2"]
       }
+      
     ],
     "events": [
       {

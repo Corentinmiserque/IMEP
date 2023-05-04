@@ -1,0 +1,59 @@
+.carousel {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    background-size: cover;
+    
+    &__prev {
+        border: 0.5px solid $white;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background-image: url(../../public/arrow-left-white.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        &:hover{
+            background-color: white;
+            background-image: url(../../public/arrow-left-blue.svg);
+        }
+
+    }
+     
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        height:100%;
+        img{
+            width: 50%;
+        }
+        h2{
+            font: 1em sans-serif;
+        }
+        p{
+            font-size: 0.8rem;
+            width: 80%;
+            background-color: aqua;
+        }
+          
+        
+      }
+      &__next {
+        border: 0.5px solid $white;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background-image: url(../../public/arrow-right-white.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        &:hover{
+            background-color: white;
+            background-image: url(../../public/arrow-right-blue.svg);
+        }
+    }
+}

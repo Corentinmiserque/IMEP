@@ -1,7 +1,7 @@
 import chevronLeft from '../../../public/chevron-left.svg';
 import chevronDown from '../../../public/chevron-down.svg';
 import { useState } from 'react';
-import circleDown from '../../../public/circle-down.svg';
+import circleDown from "../../../public/circle-down.svg"
 
 function Herosection() {
 

@@ -8,8 +8,11 @@ body{
        
         .intro{
             z-index: 10;
-            width: 90%;
+            width: 100%;
                   margin: 0 auto;
+                  &__right{
+                    margin-left: 5%;
+                  }
 
 &__right{
     &__text{

@@ -10,7 +10,9 @@
 @import "./study-category";
 @import "./heroarea";
 @import "./teachers";
-
+@import "./event";
+@import "./new";
+@import "./carousel";
 *{
   margin: 0;
   padding: 0;
@@ -57,7 +59,7 @@ h4{
   font-weight: 400;
   margin-bottom: 10%;
   margin-left: 5%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
  //button
@@ -98,7 +100,45 @@ h4{
     color: $white;
   }
 }
+//white button 
 
+.white-button {
+  position: relative;
+  border: solid 1px $white;
+  border-radius: 20px;
+  background-color: transparent;
+  margin: 10% 0;
+  padding:  1ch 2ch;
+  font-size: 0.6rem;
+  z-index: 1;
+  
+  a {
+    color: $white;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    transition: all 0.5s ease;
+    z-index: -1;
+    pointer-events: none; /* ajout de cette ligne */
+  }
+  
+  &:hover::before {
+    left: 0;
+  }
+  
+  overflow: hidden;
+  
+  &:hover a {
+    color: $dark-blue;
+  }
+}
 
 //details
 details {
@@ -126,7 +166,7 @@ body {
       width: 100%;
       height: 35%;
       max-width: 1150px;
-      margin: 10% auto;
+      margin: 0% auto 0;
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
@@ -165,12 +205,13 @@ body {
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   gap: 1rem;
-  transform: translateX(5%);
+  margin-left: 5%;
+
   &::-webkit-scrollbar {
     height:1px;
   }
   &::-webkit-scrollbar-track {
-    background-color: rgb(233, 233, 233);
+  background-color:rgb(200, 200, 200);
   }
   &::-webkit-scrollbar-thumb {
     background-color: $dark-blue;

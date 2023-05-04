@@ -22,8 +22,8 @@ const CourseCard = ({ course }) => (
 );
 
 const StudyCategory = () => {
-  const courseCards = coursesData.courses.map((course) => (
-    <CourseCard key={course.title} course={course} />
+  const courseCards = coursesData.courses.map((course, index) => (
+    <CourseCard key={index} course={course} />
   ));
 
   return (
@@ -41,4 +41,5 @@ const StudyCategory = () => {
 };
 
 export default StudyCategory;
+
 
