@@ -3,6 +3,7 @@ import chevronDown from '../../../public/chevron-down.svg';
 import { useState } from 'react';
 import circleDown from "../../../public/circle-down.svg"
 
+
 function Herosection() {
 
   const [details1Expanded, setDetails1Expanded] = useState(false);
