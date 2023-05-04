@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import alumniData from "../../Json/Alumni.json";
 import alumniImage from "../../../public/alumni-image.svg";
+import dots from "../../../public/dots.svg";
 
 function AlumniCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -22,6 +23,12 @@ function AlumniCarousel() {
   };
 
   return (
+    <>
+    <section className="sub-title sub-title-carousel">
+    <img src={dots} alt="dots" />
+    <h2>Alumni</h2>
+  </section>
+  <h4> Learn from our <span className="GT-Super">students</span></h4>
     <div className="carousel"
     style={{
         backgroundImage: `linear-gradient(180deg, rgba(23, 27, 55, 0.8) 26.56%, rgba(10, 15, 57, 0) 100%), url(${alumniData.alumni[activeIndex].background})`
@@ -37,6 +44,7 @@ function AlumniCarousel() {
   
       <div className="carousel__next" onClick={handleNext}></div>
     </div>
+    </>
   );
 }
 

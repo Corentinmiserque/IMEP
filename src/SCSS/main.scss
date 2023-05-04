@@ -13,6 +13,7 @@
 @import "./event";
 @import "./new";
 @import "./carousel";
+@import "./number";
 *{
   margin: 0;
   padding: 0;
@@ -42,7 +43,7 @@ body {
 //sub title
 .sub-title{
   padding: 10% 0;
-  width: 40%;
+  width: 40;
   display: flex;
   flex-direction: column;
   margin-left: 5%;
@@ -51,13 +52,14 @@ body {
   }
   h2{
     font-size: 0.9rem;
-    margin-top: 10%;
+    margin-top:2.5%;
     font-weight: 200;
   }
 }
 h4{
   font-weight: 400;
   margin-bottom: 10%;
+
   margin-left: 5%;
   font-size: 1.5rem;
 }

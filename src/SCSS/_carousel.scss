@@ -1,3 +1,5 @@
+
+
 .carousel {
     display: flex;
     flex-direction: row;
@@ -6,7 +8,6 @@
     justify-content: center;
     height: 20rem;
     background-size: cover;
-    
     &__prev {
         border: 0.5px solid $white;
         width: 2.5rem;
@@ -19,26 +20,34 @@
             background-color: white;
             background-image: url(../../public/arrow-left-blue.svg);
         }
-
     }
-     
     &__content {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 50%;
+        width: 70%;
         height:100%;
+        text-align: center;
         img{
-            width: 50%;
+            width: 5rem;
+            height: 10rem;
+            margin-top: 20%;
+      
         }
         h2{
-            font: 1em sans-serif;
+            font: 0.7rem sans-serif;
+            opacity: 0.7;
+            width: 80%;
+            height: 5%;
+            margin: 2.5% 0;
+    
         }
         p{
             font-size: 0.8rem;
             width: 80%;
-            background-color: aqua;
+            height: 40%;
+
         }
           
         

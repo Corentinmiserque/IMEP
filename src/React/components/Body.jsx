@@ -8,7 +8,7 @@ import Event from './Event';
 import News from './New';
 import HeroArea3 from './HeroArea3';
 import AlumniCarousel from './Alumni';
-
+import Number from './Number';
 function Body() {
 
 
@@ -19,6 +19,7 @@ function Body() {
         <Intro/>
         <StudyCategory/>
         <HeroArea1/>
+        <Number/>
         <AlumniCarousel/>
         <Teachers/>
         <HeroArea2/>

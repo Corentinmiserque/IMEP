@@ -422,6 +422,7 @@ body main .heroarea3 form input::placeholder {
 .news .horizontal-scroll {
   margin-left: 5%;
   margin-bottom: 0;
+  padding-bottom: 5%;
 }
 .news .horizontal-scroll::-webkit-scrollbar {
   width: 5px;
@@ -456,6 +457,14 @@ body main .heroarea3 form input::placeholder {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.news .card .tag {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: #96BE1F;
+  font-size: 0.5rem;
+  margin-top: 5%;
 }
 .news .card .teachers-name {
   font-size: 1rem;
@@ -495,19 +504,26 @@ body main .heroarea3 form input::placeholder {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   height: 100%;
+  text-align: center;
 }
 .carousel__content img {
-  width: 50%;
+  width: 5rem;
+  height: 10rem;
+  margin-top: 20%;
 }
 .carousel__content h2 {
-  font: 1em sans-serif;
+  font: 0.7rem sans-serif;
+  opacity: 0.7;
+  width: 80%;
+  height: 5%;
+  margin: 2.5% 0;
 }
 .carousel__content p {
   font-size: 0.8rem;
   width: 80%;
-  background-color: aqua;
+  height: 40%;
 }
 .carousel__next {
   border: 0.5px solid #ffffff;
@@ -521,6 +537,42 @@ body main .heroarea3 form input::placeholder {
 .carousel__next:hover {
   background-color: white;
   background-image: url(../../public/arrow-right-blue.svg);
+}
+
+.numbers {
+  width: 90%;
+}
+.numbers__header {
+  text-align: center;
+}
+.numbers__header h4 {
+  margin: 5% 0 0;
+}
+.numbers__header p {
+  margin-top: 5%;
+}
+.numbers__number {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  gap: 0.5rem;
+}
+.numbers__number img {
+  width: 3.5rem;
+  height: 3rem;
+}
+.numbers__number h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  height: 1rem;
+}
+.numbers__number p {
+  font-size: 0.8rem;
+  height: 9rem;
+}
+.numbers__number__3, .numbers__number__1 {
+  transform: translateY(1rem);
 }
 
 * {
@@ -549,7 +601,7 @@ body {
 
 .sub-title {
   padding: 10% 0;
-  width: 40%;
+  width: 40;
   display: flex;
   flex-direction: column;
   margin-left: 5%;
@@ -559,7 +611,7 @@ body {
 }
 .sub-title h2 {
   font-size: 0.9rem;
-  margin-top: 10%;
+  margin-top: 2.5%;
   font-weight: 200;
 }
 

@@ -12,6 +12,7 @@ const NewCard = ({ news }) => (
       {news.photo === "new2" && <img src={new2} alt={news.title} />}
       {news.photo === "new3" && <img src={new3} alt={news.title} />}
     </section>
+    <p className="tag">{news.tags}</p>
     <h3 className="news-title big">{news.title} <span className="GT-Super">{news.span}</span></h3>
     <p className="news-description small">{news.description}</p>
     <button className="all-button white-button">
@@ -34,7 +35,7 @@ const News = () => {
         </section>
         <section className="article">
           <button className="all-button white-button">
-            <a href="#">Read more</a>
+            <a href="#">View all article</a>
           </button>
         </section>
       </div>
