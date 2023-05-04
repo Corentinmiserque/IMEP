@@ -2,64 +2,43 @@ import container1 from "../../../public/container1.svg";
 import container2 from "../../../public/container2.svg";
 import container3 from "../../../public/container3.svg";
 import container4 from "../../../public/container4.svg";
-import dots from "../../../public/dots.svg"
+import dots from "../../../public/dots.svg";
+import coursesData from "../../Json/Courses.json";
 
-function StudyCategory() {
+const CourseCard = ({ course }) => (
+  <div className="card">
+    <section className="course-img">
+      {course.photo === "container1" && <img src={container1} alt={course.title} />}
+      {course.photo === "container2" && <img src={container2} alt={course.title} />}
+      {course.photo === "container3" && <img src={container3} alt={course.title} />}
+      {course.photo === "container4" && <img src={container4} alt={course.title} />}
+    </section>
+    <h3 className="course-title">{course.title} <span className="GT-Super">{course.span}</span></h3>
+    <p className="course-description small">{course.description}</p>
+    <button className="all-button intro__button--blue">
+      <a href={course.link}>Read more</a>
+    </button>
+  </div>
+);
+
+const StudyCategory = () => {
+  const courseCards = coursesData.courses.map((course) => (
+    <CourseCard key={course.title} course={course} />
+  ));
+
   return (
-    <div className="study-category">
+    <div className="courses">
       <section className="sub-title">
         <img src={dots} alt="dots" />
-        <h2>Study Category</h2>
+        <h2>Our courses</h2>
       </section>
-      <div className="study-category__main">
-        <h1 className="study-category__title title">
-          Programs and courses <span className="GT-Super">at the Royal Music Academy</span>
-        </h1>
-        <div className="horizontal-scroll">
-          <div className="horizontal-scroll__item study-category__container">
-            <section className="container-text">
-              <h2 className="container-title">Bachelier <span className="GT-Super">en musique</span></h2>
-              <p className="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing cras ullamcorper et</p>
-              <button className="all-button intro__button--blue"> <a href="#">Read more</a></button>
-            </section>
-            <section className="container-img">
-              <img src={container1} alt="container1"/>
-            </section>
-          </div>
-          <div className="horizontal-scroll__item study-category__container">
-            <section className="container-text">
-              <h2 className="container-title">Master en musique <span className="GT-Super">à finalité didactique</span></h2>
-              <p className="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing cras ullamcorper et</p>
-              <button className="all-button intro__button--blue"> <a href="#">Read more</a></button>
-            </section>
-            <section className="container-img">
-              <img src={container2} alt="container2"/>
-            </section>
-          </div>
-          <div className="horizontal-scroll__item study-category__container">
-            <section className="container-text">
-              <h2 className="container-title">Master en musique <span className="GT-Super"> à finalité spécialisée</span></h2>
-              <p className="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing cras ullamcorper et</p>
-              <button className="all-button intro__button--blue"> <a href="#">Read more</a></button>
-            </section>
-            <section className="container-img">
-              <img src={container3} alt="container3"/>
-            </section>
-          </div>
-          <div className="horizontal-scroll__item study-category__container">
-            <section className="container-text">
-              <h2 className="container-title">Master en musique <span className="GT-Super">à finalité approfondie</span></h2>
-              <p className="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing cras ullamcorper et</p>
-              <button className="all-button intro__button--blue"> <a href="#">Read more</a></button>
-            </section>
-            <section className="container-img">
-              <img src={container4} alt="container4"/>
-            </section>
-          </div>
-        </div>
-      </div>
+      <h4>Programs and courses <span className="GT-Super">at the Royal Music Academy</span></h4>
+      <section className="horizontal-scroll">
+        {courseCards}
+      </section>
     </div>
   );
 };
 
 export default StudyCategory;
+

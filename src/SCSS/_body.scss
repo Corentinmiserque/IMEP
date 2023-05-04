@@ -3,13 +3,13 @@ body{
         color: $dark-blue;
         height: 100dvh;
         width: 100dvw;
-        z-index: 10;
+        z-index: 100;
         margin: 0 auto;
        
         .intro{
             z-index: 10;
             width: 90%;
-            margin: 0 auto;
+                  margin: 0 auto;
 
 &__right{
     &__text{

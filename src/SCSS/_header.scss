@@ -11,6 +11,7 @@ body{
         display: flex;
         flex-direction: column;
         z-index: -1;
+        
 
         .header{
             width: 100%;
@@ -23,8 +24,8 @@ body{
             position: fixed;
             background-color:  rgba(23, 27, 55, 0.95);
             z-index: 10;
-            overflow: hidden;
             max-width: 1150px;
+            backdrop-filter: blur(3px);
             a{
                 color: white;
             }

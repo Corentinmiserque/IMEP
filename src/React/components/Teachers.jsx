@@ -1,42 +1,48 @@
+import React from "react";
 import dots from "../../../public/dots.svg";
 import Ning from "../../../public/Ning.svg";
 import Gustin from "../../../public/Gustin.svg";
 import Gustin2 from "../../../public/Gustin2.svg";
 import teachersData from "../../Json/Teachers.json";
 
-function Teachers() {
+const TeacherCard = ({ teacher }) => (
+  <div className="card">
+      <section className="teachers-img">
+        {teacher.photo === "Ning" && <img src={Ning} alt={teacher.name} />}
+        {teacher.photo === "Gustin" && <img src={Gustin} alt={teacher.name} />}
+        {teacher.photo === "Gustin2" && <img src={Gustin2} alt={teacher.name} />}
+        </section>
+        <p className="teachers-instrument">{teacher.instrument}</p>
+        <h3 className="teachers-name GT-Super">{teacher.name}</h3>
+        <button className="all-button intro__button--blue">
+          <a href={teacher.link}>Read more</a>
+        </button>
+  </div>
+);
+
+const Teachers = () => {
+  const teacherCards = teachersData.teachers.map((teacher) => (
+    <TeacherCard key={teacher.name} teacher={teacher} />
+  ));
+
   return (
     <div className="teachers">
-      <section className="teachers__sub-title">
+      <section className="sub-title">
         <img src={dots} alt="dots" />
-        <h2>Our teachers</h2>
+        <h2 className="title">  Our teachers</h2>
       </section>
+      <h4>Learn from Our World-Class Faculty <span className="GT-Super">at the Royal Music Academy</span></h4>
+        <section className="horizontal-scroll">
+          {teacherCards}
+        </section>
 
-      <div className="teachers__category-main">
-        {teachersData.teachers.map((teacher) => (
-          <div key={teacher.name} className="teachers__category-horizontal-scroll">
-            <section className="teachers__category-container-img">
-              {teacher.photo === "Ning" && <img src={Ning} alt={teacher.name} />}
-              {teacher.photo === "Gustin" && <img src={Gustin} alt={teacher.name} />}
-              {teacher.photo === "Gustin2" && <img src={Gustin2} alt={teacher.name} />}
-            </section>
-            <div className="teachers__category-horizontal-scroll-item teachers__category-container">
-              <section className="teachers__category-container-text">
-                <p>{teacher.instrument}</p>
-                <h3>{teacher.name}</h3>
-                <button className="all-button intro__button--blue">
-                  <a href={teacher.link}>Read more</a>
-                </button>
-              </section>
-            </div>
-          </div>
-        ))}
-      </div>
     </div>
   );
-}
+};
 
 export default Teachers;
+
+
 
 
 

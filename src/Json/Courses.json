@@ -1,0 +1,32 @@
+{
+    "courses": [
+      {
+        "photo": "container1",
+        "title": "Bachelier ",
+        "span": " en\n musique",
+        "description": "Learn the basics of React and build a simple app",
+        "link": "#"
+      },
+      {
+        "photo": "container2",
+        "title": "Master en musique ",
+        "span": "à finalité didactique",
+        "description": "Get started with Node.js and build your first web app",
+        "link": "#"
+      },
+      {
+        "photo": "container3",
+        "title": "Master en musique ",
+        "span": "à finalité spécialisée",
+        "description": "Learn Python programming and data analysis techniques",
+        "link": "#"
+      },
+      {
+        "photo": "container4",
+        "title": "Master en musique",
+        "span": "à finalité approfondie",
+        "description": "Learn the basics of UI design and create beautiful interfaces",
+        "link": "#"
+      }
+    ]
+}

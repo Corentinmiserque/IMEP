@@ -1,0 +1,37 @@
+{
+    "news": [
+      {
+        "photo": "https://example.com/news1.jpg",
+        "description": "This is the first news article.",
+        "link": "#",
+        "tags": ["tag1", "tag2"]
+      },
+      {
+        "photo": "https://example.com/news2.jpg",
+        "description": "This is the second news article.",
+        "link": "#",
+        "tags": ["tag3", "tag4"]
+      }
+    ],
+    "events": [
+      {
+        "photo": "event1",
+        "title": "Unleashing Creativity: The Royal Music Academy's Approach to Music Education",
+        "description": "Lorem ipsum dolor sit amet consectetur. Diam porttitor vestibulum et velit gravida ut pellentesque a feugiat. Blandit ante etiam eu sed et fermentum viverra in. Feugiat vitae risus scelerisque risus augue fermentum. Dolor venenatis vitae diam gravida sed justoamet erat rutrum ullamcorper. ",
+        "link": "#"
+      },
+      {
+        "photo": "event2",
+        "title": "Unleashing Creativity: The Royal Music Academy's Approach to Music Education",
+        "description": "Lorem ipsum dolor sit amet consectetur. Diam porttitor vestibulum et velit gravida ut pellentesque a feugiat. Blandit ante etiam eu sed et fermentum viverra in. Feugiat vitae risus scelerisque risus augue fermentum. Dolor venenatis vitae diam gravida sed justoamet erat rutrum ullamcorper. ",
+        "link": "#"
+      },
+      {
+        "photo": "event3",
+        "title": "Unleashing Creativity: The Royal Music Academy's Approach to Music Education",
+        "description": "Lorem ipsum dolor sit amet consectetur. Diam porttitor vestibulum et velit gravida ut pellentesque a feugiat. Blandit ante etiam eu sed et fermentum viverra in. Feugiat vitae risus scelerisque risus augue fermentum. Dolor venenatis vitae diam gravida sed justoamet erat rutrum ullamcorper. ",
+        "link": "#"
+      }
+    ]
+  }
+  
