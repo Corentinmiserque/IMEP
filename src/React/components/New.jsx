@@ -39,9 +39,8 @@ const News = () => {
           </button>
         </section>
       </div>
-      <h4>
-        Latest news from the Royal Music Academy:{" "}
-        <span className="GT-Super">Stay informed!</span>
+
+      <h4> <span className="GT-Super"> News </span>from the Royal Music Academy:<span className="GT-Super"> Latest Updates and Information</span>
       </h4>
       <section className="horizontal-scroll">{newCards}</section>
     </div>

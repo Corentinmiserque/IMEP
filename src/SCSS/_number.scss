@@ -1,38 +1,105 @@
 .numbers {
+  width: 90%;
+  margin-top: 5%;
+
+  &__header {
+    h4 {
+      margin: 5% 0 0;
+    }
+    p {
+      margin-top: 5%;
+      font-weight: 200;
+      opacity: 0.8;
+    }
+  }
+
+  &__number {
+    display: flex;
+    flex-direction: row;
     width: 90%;
-    &__header {
-      text-align: center;
-      h4 {
-        margin: 5% 0 0;
+    margin: 0;
+    gap: 0.5rem;
+
+    img {
+      width: 3.5rem;
+      height: 3rem;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 1rem;
+      height: 1rem;
+      font-weight: 200;
+    }
+
+    p {
+      font-size: 0.8rem;
+      height: 9rem;
+      font-weight: 200;
+    }
+   
+  }
+
+  &__number__3,
+  &__number__1 {
+    transform: translateY(1rem);
+  }
+
+}
+@media screen and (min-width: 425px) {
+    
+  .numbers {
+    text-align: center;
+    margin: 0 auto;
+    height: 55dvw;
+
+    &__number{
+      text-align: left;
+      gap: 1dvw;
+      img{
+        width: 5dvw;
+        height: 4dvw;
+
+      }  
+      h3{
+        font-size: 1.6dvw;
+        margin: 2.5% 0 5%;
+        font-weight: 200;
+        height:2dvw;
       }
-      p {
-        margin-top: 5%;
+      p{
+        width: 80%;
+        font-size: 1.15dvw;
+        font-weight: 200;
+        height:4dvw;
+        opacity: 0.8;
+
       }
     }
-    &__number {
-      display: flex;
-      flex-direction: row;
-      width: 90%;
-      margin: 0 auto;
-      gap: 0.5rem;
-  
-      img {
-        width: 3.5rem;
-        height: 3rem;
+    &__header {
+      text-align: center;
+      .sub-title{
+        padding-top: 10%;
       }
-      h3 {
-        font-weight: 400;
-        font-size: 1rem;
-        height: 1rem;
+      h4 {
+        margin: 2.5% auto 0;
       }
-      p {
-        font-size: 0.8rem;
-        height: 9rem;
-      }
-   
-      }
-      &__number__3, &__number__1{
-        transform: translateY(1rem);
-      }
+      .small {
+        width: 80%;
+        margin: 2.5% auto;
+        font-weight: 200;
+    }
 
   }
+
+  .numbers__number {
+    width: 90%;
+    margin: 0 auto;
+  }
+  &__number__3,
+&__number__1 {
+  transform: translateY(2dvw);
+}
+}
+
+}

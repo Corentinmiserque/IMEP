@@ -10,8 +10,8 @@ function Number() {
         <div className='numbers__header'>
         <section className="sub-title">
           <h2>Key numbers</h2>
-          <h4>The Royal Music Academy's <span className='GT-Super'><br />Key Indicators</span></h4>
-          <p className='small'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing cras ullamcorper et</p>
+          <h4>The Royal Music Academy's <span className='GT-Super'>Key Indicators</span></h4>
+          <p className='small'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.< br /> Adipiscing cras ullamcorper et</p>
         </section>
         </div>
 

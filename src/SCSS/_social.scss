@@ -1,24 +1,43 @@
 .social {
+  display: flex;
+  flex-direction: column;
+.sub-title{
+  margin-top: 7.5%;
+}
+  .social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+
+    .facebook,
+    .twitter,
+    .insta,
+    .linkedin {
+      img {
+        width: 4rem;
+        margin-bottom: 25%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .social {
     display: flex;
     flex-direction: column;
   
-   
-  
     .social-media {
-      display: flex;
-      justify-content: space-between;
-      width: 90%;
-      margin: 0 auto;
-  
+  width: 75%;
       .facebook,
       .twitter,
       .insta,
       .linkedin {
         img {
-          width: 4rem;
-          margin-bottom: 25%;
+          width: 15vw;
+          margin-bottom: 10dvw;
         }
       }
     }
-  }
-  
+  }  
+}

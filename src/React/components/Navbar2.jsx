@@ -13,7 +13,7 @@ function Navbar2() {
 
   return (
 
-      <section className="navbar2__summary">
+      <section className="navbar2">
 
         <details onToggle={() => setDetails1Expanded(!details1Expanded)} open={details1Expanded} key="details1">
           <summary>
@@ -29,14 +29,13 @@ function Navbar2() {
            <a href="#">lorem</a>
           </div>
         </details>
-
+  <a href="#">Studies</a>
         <details onToggle={() => setDetails2Expanded(!details2Expanded)} open={details2Expanded} key="details2">
           <summary>
             <span className="summary-title">Our Teacher</span>
             <img className="summary-chevron-down" src={chevronIcon2} alt="chevron" />
           </summary>
 
-          <a href="#">Studies</a>
 
           <div className="summary-content">
            <a href="#">lorem</a>

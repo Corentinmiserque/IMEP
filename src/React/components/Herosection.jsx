@@ -19,15 +19,13 @@ function Herosection() {
   return (
     <div className='herosection'>
       <h1 className='herosection__title title'>
-        Unlock your <br />
-        musical potential at <br />
-        our renowned <span className='GT-Super'>Royal <br />
+        Unlock your  musical potential at our renowned <span className='GT-Super'>Royal 
         Music Academy</span>
       </h1>
 
       <details onToggle={() => setDetails1Expanded(!details1Expanded)} open={details1Expanded} key="details1">
         <summary className='herosection__summary'>
-          <span className="herosection__summary-title">you are</span>
+          <span className="herosection__summary-title">Your are</span>
           <img className="herosection__summary-chevron" src={chevronIcon} alt="chevron" />
         </summary>
         <div className="herosection__summary-content">

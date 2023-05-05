@@ -2,7 +2,7 @@ body{
     header{
         display: flex;
         justify-content: center;
-        width: 100dvw;
+        width: 100%;
             .herosection{
                 width: 90%;
                 height: 30%;
@@ -11,7 +11,7 @@ body{
                 z-index: 2;
                 &__title{
                     font-weight: 400;
-                    font-size: 2rem;
+                    font-size: 2.5rem;
                 }
                 &__summary{
                     width: 55%;
@@ -55,3 +55,41 @@ body{
             }
     }
 }
+
+
+@media screen and (min-width: 425px) {
+    body {
+      header {
+        .herosection {
+          padding-top: 30%;
+          &__title {
+            font-size: 5dvw;
+            padding-top: 0%;
+          }
+          &__summary {
+            display: flex;
+            align-items: center;
+            width: 20dvw; 
+            margin-top: 5%;
+            padding: 0.9dvw 0.5dvw;
+          }
+          &__summary-chevron{
+            margin-left: 7dvw;
+          }
+          &__summary-link{
+            width: 15%;
+            font-size: 2dvw;
+            color: white;
+            margin-left: 4rem;
+            margin-top: 1%;
+            position: relative;
+          }
+          &__summary-title{
+            font-size: 2dvw;
+            margin-left: 5%;
+          }
+        }
+      }
+    }
+  }
+  

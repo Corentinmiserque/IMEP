@@ -46,7 +46,6 @@ body {
 //sub title
 .sub-title{
   padding: 10% 0;
-  width: 40;
   display: flex;
   flex-direction: column;
   margin-left: 5%;
@@ -54,17 +53,34 @@ body {
       width: 0.3rem;
   }
   h2{
-    font-size: 0.9rem;
-    margin-top:2.5%;
+    font-size: 0.7rem;
+    margin-top:0.5%;
     font-weight: 200;
+    text-transform: uppercase;
   }
+  @media only screen and (
+    min-width: 425px) { padding: 0;
+      margin-top: 0;
+      img{
+        width: 0.4dvw;
+      }
+      h2{
+        font-size: 1.1dvw;
+        margin-top:0%;
+      }
+    }
 }
+
 h4{
   font-weight: 400;
   margin-bottom: 10%;
-
   margin-left: 5%;
   font-size: 1.5rem;
+  @media only screen and (
+    min-width: 425px) { 
+  width: 77.5%;
+  margin-bottom: 5%;
+    font-size: 4.1dvw;}
 }
 
  //button
@@ -77,11 +93,9 @@ h4{
   padding:  1ch 2ch;
   font-size: 0.6rem;
   z-index: 1;
-  
   a {
     color: $dark-blue;
   }
-  
   &::before {
     content: "";
     position: absolute;
@@ -94,22 +108,27 @@ h4{
     z-index: -1;
     pointer-events: none; /* ajout de cette ligne */
   }
-  
   &:hover::before {
     left: 0;
   }
-  
   overflow: hidden;
-  
   &:hover a {
     color: $white;
+    
   }
+  @media only screen and (min-width: 425px) {
+    padding: 0.65vw 1.6vw;
+      font-size:0.95vw;
+      margin: 2.5% 0;
+      border-radius: 50px;
+     
+    }
 }
 //white button 
 
 .white-button {
   position: relative;
-  border: solid 1px $white;
+  border: solid 0.5px $white;
   border-radius: 20px;
   background-color: transparent;
   margin: 10% 0;
@@ -161,7 +180,12 @@ summary::marker {
 .small{
   margin-top: 10%;
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 400;
+  @media only screen and (
+    min-width: 425px) {
+      font-size: 1.4dvw;
+      margin-top: 5%;
+    }
 }
 
 //heroarea
@@ -170,7 +194,7 @@ body {
     .heroarea {
       width: 100%;
       height: 35%;
-      max-width: 1150px;
+      max-width: 1720px;
       margin: 0% auto 0;
       background-repeat: no-repeat;
       background-position: center center;
@@ -197,7 +221,18 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 0;
+      
       }
+      @media only screen and (
+        min-width: 425px) {
+          height: 75%;
+          &__title{
+            font-size: 7dvw;
+          }
+          &__ellipse{
+            width: 35dvw;
+          }
+        }
     }
   }
 }
