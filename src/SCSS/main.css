@@ -135,6 +135,7 @@ body header {
     color: #ffffff;
     font-size: 1dvw;
     margin: auto auto;
+    text-transform: uppercase;
   }
   .navbar .navbar2__bottom .summary-title:hover {
     opacity: 0.6;
