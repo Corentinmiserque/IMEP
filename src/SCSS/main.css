@@ -12,7 +12,6 @@
   src: url("../assets/fonts/helvetica Neue.otf") format("opentype");
 }
 body header {
-  width: 100%;
   padding-bottom: 25%;
   max-width: 1720px;
   margin: 0 auto;
@@ -26,6 +25,9 @@ body header {
 }
 
 @media screen and (min-width: 425px) {
+  header {
+    height: 88%;
+  }
   .navbar {
     display: flex;
     flex-direction: column;
@@ -241,7 +243,7 @@ body header .herosection img.circle {
 @media screen and (min-width: 425px) {
   body header .herosection {
     width: 90%;
-    padding-top: 25%;
+    padding-top: 32%;
   }
   body header .herosection__title {
     font-size: 4dvw;
