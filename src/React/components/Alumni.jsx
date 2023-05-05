@@ -28,7 +28,7 @@ function AlumniCarousel() {
     <img src={dots} alt="dots" />
     <h2>Alumni</h2>
   </section>
-  <h4> Learn from our <span className="GT-Super">students</span></h4>
+  <h4  className=" carousel-title"> Learn from our <span className="GT-Super">students</span></h4>
     <div className="carousel"
     style={{
         backgroundImage: `linear-gradient(180deg, rgba(23, 27, 55, 0.8) 26.56%, rgba(10, 15, 57, 0) 100%), url(${alumniData.alumni[activeIndex].background})`

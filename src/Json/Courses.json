@@ -4,28 +4,28 @@
         "photo": "container1",
         "title": "Bachelier ",
         "span": " en\n musique",
-        "description": "Learn the basics of React and build a simple app",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing cras ullamcorper et",
         "link": "#"
       },
       {
         "photo": "container2",
         "title": "Master en musique ",
         "span": "à finalité didactique",
-        "description": "Get started with Node.js and build your first web app",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing cras ullamcorper et",
         "link": "#"
       },
       {
         "photo": "container3",
         "title": "Master en musique ",
         "span": "à finalité spécialisée",
-        "description": "Learn Python programming and data analysis techniques",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing cras ullamcorper et",
         "link": "#"
       },
       {
         "photo": "container4",
         "title": "Master en musique",
         "span": "à finalité approfondie",
-        "description": "Learn the basics of UI design and create beautiful interfaces",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing cras ullamcorper et",
         "link": "#"
       }
     ]

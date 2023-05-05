@@ -10,7 +10,7 @@ function Footer() {
   return (
       <div className='footer'>
         <div className='footer1'>
-        <section className='link'>
+        <section className='link location'>
 <img src={logo} alt="logo" />
 <p>Adresse</p>
 <a href="#">Rue Henri Blès 33A, <br />
@@ -21,7 +21,7 @@ Belgique</a>
 </section>
 
 <section className='link1 link'>
-<p>link</p>
+<p>liens</p>
 <a href="#">IMEP</a>
 <a href="#">Les professeurs</a>
 <a href="#">Etudes</a>
@@ -31,7 +31,7 @@ Belgique</a>
 </section>
 
 <section className='link2 link'>
-<p>link</p>
+<p>liens</p>
 <a href="#">S’inscrire</a>
 <a href="#">Nous soutenir</a>
 <a href="#">Louer une salle</a>
@@ -41,7 +41,7 @@ Belgique</a>
 
 </section>
 <div className='link follow'>
-    <p>Follow us</p>
+    <p>Follow us:</p>
 <div className='social-media'>
     <img className='facebook' src={facebook} alt="facebook" />
     <img src={twitter} alt="twitter" />

@@ -11,9 +11,9 @@ const EventCard = ({ event }) => (
       {event.photo === "event3" && <img src={event1} alt={event.title} />}
     </section>
     <h3 className="event-title big">{event.title} <span className="GT-Super">{event.span}</span></h3>
-    <p className="event-description small">{event.description}</p>
+    <p className="event-description">{event.description}</p>
     <button className="all-button white-button">
-      <a href={event.link}>Read more</a>
+      <a href={event.link}>Read Article</a>
     </button>
   </div>
 );
@@ -25,7 +25,7 @@ const Event = () => {
 
   return (
     <div className="event">
-      <section className="sub-title">
+      <section className="sub-title event-sub-title">
         <img src={dots} alt="dots" />
         <h2>Events</h2>
       </section>

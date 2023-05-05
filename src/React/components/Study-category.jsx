@@ -16,7 +16,7 @@ const CourseCard = ({ course }) => (
     <section className="course">
     <h3 className="course-title">{course.title} <span className="GT-Super">{course.span}</span></h3>
     <p className="course-description small">{course.description}</p>
-    <button className="all-button intro__button--blue">
+    <button className="all-button study-button">
       <a href={course.link}>Read more</a>
     </button>
     </section>
@@ -34,7 +34,9 @@ const StudyCategory = () => {
         <img src={dots} alt="dots" />
         <h2>Study Cartegory</h2>
       </section>
-      <h4>Programs and courses <span className="GT-Super">at the Royal Music Academy</span></h4>
+       <h4>Programs and courses <span className="GT-Super">at the Royal Music Academy</span></h4>
+      <section className="courses-title"></section>
+     
       <section className="horizontal-scroll">
         {courseCards}
       </section>

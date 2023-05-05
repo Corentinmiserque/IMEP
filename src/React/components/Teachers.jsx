@@ -31,7 +31,7 @@ const Teachers = () => {
         <img src={dots} alt="dots" />
         <h2 className="title">  Our teachers</h2>
       </section>
-      <h4>Learn from Our World-Class Faculty< br /> <span className="GT-Super">at the Royal Music Academy</span></h4>
+      <h4>Learn from Our World-Class Faculty <span className="GT-Super">at the Royal Music Academy</span></h4>
         <section className="horizontal-scroll">
           {teacherCards}
         </section>

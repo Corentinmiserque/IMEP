@@ -1,5 +1,6 @@
 .teachers{
   width: 100%;
+  padding-top: 10%;
 }
 .horizontal-scroll{
   margin-bottom: 5%;
@@ -28,20 +29,29 @@
   button{
     margin-bottom: 0;
   }
-  @media screen and (min-width: 425px) {
-    .sub-title{
-      margin-top: 7.5%;
-      margin-bottom: 1%;
+}
+@media screen and (min-width: 425px) {
+  .sub-title{
+    margin-top: 7.5%;
+    margin-bottom: 1%;
+  }
+
+  .card {
+    width: 35%;
+    height: 80dvw;
+    img{
+      width: 100%;
+      object-fit: cover;
+      border: 1px solid rgb(233, 233, 233);
     }
-    .card {
-      width: 35%;
-      .teachers-name{
-        font-size: 2.3dvw;
-      }
-      .teachers-instrument{
-        font-size: 1.0dvw;
-        margin: 5% 0;
-      }
+  
+    .teachers-name{
+      font-size: 2.3dvw;
+    }
+    .teachers-instrument{
+      font-size: 1.2dvw;
+      margin: 5% 0;
+      opacity: 0.7;
     }
   }
 }

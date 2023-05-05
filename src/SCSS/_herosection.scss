@@ -63,29 +63,30 @@ body{
         .herosection {
           padding-top: 30%;
           &__title {
-            font-size: 5dvw;
+            font-size: 4dvw;
             padding-top: 0%;
+            width: 80%;
           }
           &__summary {
             display: flex;
             align-items: center;
-            width: 20dvw; 
+            width: 12.5dvw; 
             margin-top: 5%;
-            padding: 0.9dvw 0.5dvw;
+            padding: 1.2dvw 0.5dvw;
           }
           &__summary-chevron{
-            margin-left: 7dvw;
+            margin-left: 5dvw;
           }
           &__summary-link{
             width: 15%;
-            font-size: 2dvw;
+            font-size: 1dvw;
             color: white;
-            margin-left: 4rem;
+            margin-left: 1%;
             margin-top: 1%;
             position: relative;
           }
           &__summary-title{
-            font-size: 2dvw;
+            font-size: 1dvw;
             margin-left: 5%;
           }
         }

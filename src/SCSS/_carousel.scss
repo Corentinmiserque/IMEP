@@ -40,6 +40,7 @@
             width: 80%;
             height: 5%;
             margin: 2.5% 0;
+            text-transform: uppercase;
         }
         p{
             font-size: 0.8rem;
@@ -66,13 +67,38 @@
     .sub-title-carousel {
       
       width: 10%;
+     transform: translateX(47svw);
 
     }
-    h4{
+    .carousel-title{
+        width: 100dvw;
         text-align: center;
     }
     .carousel{
         height: 50vw;   
+        &__prev{
+            width: 5dvw;
+            height: 5dvw;
+        }
+        &__next{
+            width: 5dvw;
+            height: 5dvw;
+        }
+        &__content{
+            img{
+                width: 10dvw;
+                height: 10dvw;
+                margin-top: 15%;
+            }
+            h2{
+                font-size: 1.2dvw;
+            }
+            p{
+                font-size: 2.5dvw;
+                width: 60%
+            }  
+
+        }
     }
   }
   
