@@ -270,6 +270,10 @@ body header .herosection img.circle {
     font-size: 1dvw;
     margin-left: 5%;
   }
+  body header .herosection img.circle {
+    width: 8dvw;
+    bottom: 10%;
+  }
 }
 body header .header {
   z-index: 100;

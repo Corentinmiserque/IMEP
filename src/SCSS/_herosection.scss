@@ -91,7 +91,15 @@ body{
             font-size: 1dvw;
             margin-left: 5%;
           }
+          img{
+            &.circle{ 
+              
+                width: 8dvw;
+                bottom: 10%;
+   
+            }}
         }
+      
       }
     }
   }
