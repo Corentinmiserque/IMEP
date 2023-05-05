@@ -18,10 +18,9 @@ function Herosection() {
 
   return (
     <div className='herosection'>
-      <h1 className='herosection__title title'>
-        Unlock your  musical potential at our renowned <span className='GT-Super'>Royal 
-        Music Academy</span>
-      </h1>
+  <h1 className='herosection__title title'>
+    Unlock your musical potential at our renowned <span className='GT-Super'>Royal Music Academy</span>
+  </h1>
 
       <details onToggle={() => setDetails1Expanded(!details1Expanded)} open={details1Expanded} key="details1">
         <summary className='herosection__summary'>

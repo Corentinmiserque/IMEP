@@ -41,18 +41,14 @@
   .courses {
     display: flex;
     flex-direction: column;
-    padding-top: 5%;
+    padding: 5% 0;
     width: 100dvw;
-
     
     .sub-title {
       display: flex;
     }
-
-    h4 {
-      margin-top: 20px;
-      margin-bottom: 10px;
-      text-align: center;
+    h4{
+      margin-bottom: 0;
     }
 
     .horizontal-scroll {
@@ -88,30 +84,38 @@
         }
 
         .course {
-  width: 40%;
-  background-color: aqua;
-          h3 {
-            margin: 0 auto;
-            font-size: 3dvw;
+          width: 40%;
+          height: 35dvw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .text{
             width: 80%;
+            margin: auto;
+            
+          }
+
+          h3 {
+        
+            font-size: 3dvw;
+            margin-bottom: 2%;
+       
        
           }
 
           .course-description {
-            font-size: 1.1dvw;
-            width: 80%;
-            margin: 5% auto;
+            font-size: 1.3dvw;
+            margin-bottom: 5%;
+          
 
           }
-
-          .study-button{
-            margin-left: 10%;
           }
         }
       }
     }
   }
-}
+
+
 
 
 

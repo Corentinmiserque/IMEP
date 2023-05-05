@@ -13,7 +13,7 @@
 }
 body header {
   width: 100%;
-  height: 100%;
+  padding-bottom: 25%;
   max-width: 1720px;
   margin: 0 auto;
   background: linear-gradient(180deg, rgba(23, 27, 55, 0.8) 26.56%, rgba(10, 15, 57, 0) 100%), url(../../public/herosection.svg);
@@ -24,25 +24,130 @@ body header {
   flex-direction: column;
   z-index: -1;
 }
-body header .header {
-  width: 100%;
-  height: 9%;
-  position: fixed;
-}
-body header .header-open {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: rgba(23, 27, 55, 0.95);
-  z-index: 10;
-  max-width: 1720px;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-}
-body header .header-open a {
-  color: white;
-}
 
+@media screen and (min-width: 425px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.6);
+    width: 100%;
+  }
+  .navbar__top {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 1%;
+    justify-content: space-between;
+  }
+  .navbar__top__left {
+    display: flex;
+    margin-top: 1%;
+    width: 25%;
+    justify-content: space-between;
+  }
+  .navbar__top__left a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.9dvw;
+    position: relative;
+  }
+  .navbar__top__left a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.5px;
+    bottom: -0.1dvw;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease-out;
+  }
+  .navbar__top__left a:hover::before {
+    width: 100%;
+  }
+  .navbar__top__right {
+    display: flex;
+    margin-top: 1%;
+    width: 25%;
+    justify-content: space-between;
+  }
+  .navbar__top__right a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.9dvw;
+    position: relative;
+  }
+  .navbar__top__right a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.5px;
+    bottom: -0.1dvw;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease-out;
+  }
+  .navbar__top__right a:hover::before {
+    width: 100%;
+  }
+  .navbar .navbar2 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 2dvw;
+    margin: 3% auto 2%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .navbar2__logo img {
+    width: 7dvw;
+  }
+  .navbar .navbar2__bottom {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    /* Ajout de ces deux propriétés pour centrer verticalement les éléments */
+    display: flex;
+    align-items: center;
+  }
+  .navbar .navbar2__bottom a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.9dvw;
+    position: relative;
+    margin: auto auto;
+    align-items: center;
+  }
+  .navbar .navbar2__bottom a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.5px;
+    bottom: -0.1dvw;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease-out;
+  }
+  .navbar .navbar2__bottom a:hover::before {
+    width: 100%;
+  }
+  .navbar .navbar2__bottom .summary-title {
+    color: #ffffff;
+    font-size: 1dvw;
+    margin: auto auto;
+  }
+  .navbar .navbar2__bottom .summary-title:hover {
+    opacity: 0.6;
+  }
+  .navbar .navbar2__bottom .summary-title summary {
+    background-color: aqua;
+  }
+  .navbar .navbar2__bottom .summary-title .summary-content {
+    display: flex;
+    flex-direction: row;
+  }
+}
 body header .hamburger {
   position: fixed;
   top: 1%;
@@ -82,65 +187,6 @@ body header .hamburger span {
     display: none;
   }
 }
-@media screen and (min-width: 425px) {
-  .header__section {
-    flex-direction: row;
-  }
-}
-body header {
-  display: flex;
-  flex-direction: row;
-}
-body header .header-open .navbar2 {
-  height: 100%;
-  width: 90%;
-  /* Ajouter une classe summary-links aux liens */
-}
-body header .header-open .navbar2 a {
-  color: #ffffff;
-}
-body header .header-open .navbar2__summary {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-left: 40%;
-  height: 25%;
-  justify-content: center;
-  left: 0;
-  right: 0;
-  margin: auto;
-  font-size: 1.2rem;
-  flex-direction: column;
-}
-body header .header-open .navbar2 .summary-content {
-  display: flex;
-  flex-direction: column;
-}
-body header .header-open .navbar2 .summary-links {
-  color: #ffffff;
-}
-
-@media screen and (min-width: 425px) {
-  body header .navbar2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    font-size: 1rem;
-  }
-  body header .navbar2 .navbar2__summary {
-    width: 50%;
-    left: auto;
-    right: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    /* Modifier la couleur des liens dans details */
-  }
-  body header .navbar2 .navbar2__summary details .summary-links {
-    color: #ffffff;
-  }
-}
 body header {
   display: flex;
   justify-content: center;
@@ -148,14 +194,14 @@ body header {
 }
 body header .herosection {
   width: 90%;
-  height: 30%;
-  padding-top: 50%;
+  padding-top: 20%;
   justify-content: center;
   z-index: 2;
 }
 body header .herosection__title {
   font-weight: 400;
   font-size: 2.5rem;
+  margin-left: 5%;
 }
 body header .herosection__summary {
   width: 55%;
@@ -163,6 +209,7 @@ body header .herosection__summary {
   padding: 4%;
   border-radius: 30px;
   border: 0.5px rgb(255, 255, 255) solid;
+  margin-left: 5%;
 }
 body header .herosection__summary-title {
   font-size: 1rem;
@@ -193,7 +240,8 @@ body header .herosection img.circle {
 
 @media screen and (min-width: 425px) {
   body header .herosection {
-    padding-top: 30%;
+    width: 90%;
+    padding-top: 25%;
   }
   body header .herosection__title {
     font-size: 4dvw;
@@ -332,16 +380,14 @@ body main .intro__right {
   .courses {
     display: flex;
     flex-direction: column;
-    padding-top: 5%;
+    padding: 5% 0;
     width: 100dvw;
   }
   .courses .sub-title {
     display: flex;
   }
   .courses h4 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: 0;
   }
   .courses .horizontal-scroll {
     width: 100%;
@@ -375,20 +421,22 @@ body main .intro__right {
   }
   .courses .horizontal-scroll .card .course {
     width: 40%;
-    background-color: aqua;
+    height: 35dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .courses .horizontal-scroll .card .course .text {
+    width: 80%;
+    margin: auto;
   }
   .courses .horizontal-scroll .card .course h3 {
-    margin: 0 auto;
     font-size: 3dvw;
-    width: 80%;
+    margin-bottom: 2%;
   }
   .courses .horizontal-scroll .card .course .course-description {
-    font-size: 1.1dvw;
-    width: 80%;
-    margin: 5% auto;
-  }
-  .courses .horizontal-scroll .card .course .study-button {
-    margin-left: 10%;
+    font-size: 1.3dvw;
+    margin-bottom: 5%;
   }
 }
 body main .heroarea1 {
@@ -792,7 +840,7 @@ body main .heroarea3 input::placeholder {
     transform: translateX(47svw);
   }
   .carousel-title {
-    width: 100dvw;
+    width: 90%;
     text-align: center;
   }
   .carousel {

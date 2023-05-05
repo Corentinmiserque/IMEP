@@ -13,13 +13,16 @@ const CourseCard = ({ course }) => (
       {course.photo === "container3" && <img src={container3} alt={course.title} />}
       {course.photo === "container4" && <img src={container4} alt={course.title} />}
     </section>
-    <section className="course">
+    <div className="course">
+      <section className="text">
     <h3 className="course-title">{course.title} <span className="GT-Super">{course.span}</span></h3>
     <p className="course-description small">{course.description}</p>
     <button className="all-button study-button">
       <a href={course.link}>Read more</a>
     </button>
-    </section>
+      </section>
+
+    </div>
   </div>
 );
 
